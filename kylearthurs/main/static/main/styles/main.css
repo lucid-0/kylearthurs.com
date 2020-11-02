@@ -1,0 +1,27 @@
+body {
+    background: #546a7b;
+}
+
+.navbar-brand {
+    font-family: Source Code Pro;
+    font-weight: bold;
+    font-size: 21.25m;
+}
+
+.ka-home-section {
+    background: #62929e;
+    font-family: Source Code Pro;
+    color: #c6c5b9;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    margin: 10px;
+}
+
+.ka-icon {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 2px
+}
