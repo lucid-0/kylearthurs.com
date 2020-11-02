@@ -18,6 +18,13 @@ body {
     align-items: center;
     min-height: 50px;
     margin: 10px;
+    border: 2px solid black;
+}
+
+.ka-home-section:hover {
+    border:3px solid black;
+    color: white;
+    text-decoration: none;
 }
 
 .ka-icon {
