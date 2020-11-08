@@ -5,8 +5,16 @@ body {
 
 .navbar-brand {
     font-family: Source Code Pro;
-    font-weight: bold;
     font-size: 21.25m;
+}
+
+.ka-text {
+    font-family: Source Code Pro;
+    color: #c6c5b9;
+}
+
+.ka-text h1 {
+    color: black;
 }
 
 .ka-home-section {
