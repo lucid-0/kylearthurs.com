@@ -1,0 +1,28 @@
+version: '3'
+services:
+    database:
+        image: postgres:latest
+        environment:
+            - POSTGRES_USER=dockerdev
+            - POSTGRES_PASSWORD=devpass
+            - POSTGRES_DB=dockerdev
+        ports:
+          - "5432:5432"
+        restart: always
+        volumes:
+            - ./database-data:/var/lib/postgresql/data/
+    kylearthurs:
+        build: .
+        image: kylearthurs
+        command: python manage.py runserver 0.0.0.0:8000 --settings=kylearthurs.settings
+        volumes:
+            - .:/kylearthurs/
+        ports:
+            - "8000:8000"
+        depends_on:
+            - database
+    migrate:
+        image: kylearthurs
+        command: python manage.py migrate --settings=kylearthurs.settings
+        depends_on:
+            - kylearthurs
