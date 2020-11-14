@@ -16,12 +16,12 @@ def business_finance(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
-def philosophy_philanthropy(request):
-    template = loader.get_template('main/philosophy-philanthropy.html')
+def philosophy(request):
+    template = loader.get_template('main/philosophy.html')
     context = {}
     return HttpResponse(template.render(context, request))
 
-def collections(request):
-    template = loader.get_template('main/collections.html')
+def blog(request):
+    template = loader.get_template('main/blog.html')
     context = {}
     return HttpResponse(template.render(context, request))

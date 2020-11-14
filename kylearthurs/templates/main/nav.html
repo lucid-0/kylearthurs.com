@@ -1,39 +1,34 @@
+{% load static %}
 <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Kyle Arthurs</a>
 
-    <a class="navbar-brand" href="/">Kyle Arthurs</a>
-  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#arthurs-navbar"
-      aria-controls="arthurs-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-  
-    <div class="collapse navbar-collapse" id="arthurs-navbar">
-  
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/dev">Software Development</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/business-finance">Business & Finance</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/static/documents/arthurs-resume.pdf">Resumé</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/philosophy-philanthropy">Philosophy & Philanthropy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/collections">Collections</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-      </ul>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#arthurs-navbar"
+    aria-controls="arthurs-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-  
-    </div>
-
-  
-  </nav>
-  <br>
+  <div class="collapse navbar-collapse" id="arthurs-navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dev">Software Development</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/business-finance">Business & Finance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% static "/main/documents/arthurs-resume.pdf" %}">Resumé</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/philosophy">Philosophy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/collections">Collections</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>

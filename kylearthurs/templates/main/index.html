@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <a href="/dev">
+        <a class="ka-home-link" class="ka-home-link" href="/dev">
           <div class="ka-home-section shadow">
             <span>Software Development</span>
             <img class="ka-icon" src="{% static "/main/icons/crunch-bang.png" %}">
@@ -13,45 +13,56 @@
         </a>
       </div>
       <div class="col-md-6">
-        <div class="ka-home-section shadow">
-          Business & Finance
-        </div>
+        <a class="ka-home-link" href="/business-finance">
+          <div class="ka-home-section shadow">
+            Business & Finance
+          </div>
+        </a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div class="ka-home-section shadow">
-          Resumé
-        </div>
+        <a class="ka-home-link" href="{% static "/main/documents/arthurs-resume.pdf" %}">
+          <div class="ka-home-section shadow">
+            Resumé
+          </div>
+        </a>
       </div>
       <div class="col-md-6">
-        <div class="ka-home-section shadow">
-          Philosophy & Philanthropy
-        </div>
+        <a class="ka-home-link" href="/philosophy">
+          <div class="ka-home-section shadow">
+            Philosophy
+          </div>
+        </a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div class="ka-home-section shadow">
-          <span>Collections</span>
-          <span class="">
-            <img class="ka-icon" src="{% static "/main/icons/vinyl.png" %}">
-            <img class="ka-icon" src="{% static "/main/icons/gamepad.png" %}">
-            <img class="ka-icon" src="{% static "/main/icons/book.png" %}">
-          </span>
-        </div>
+        <a href="/collections">
+          <div class="ka-home-section shadow">
+            <span>Collections</span>
+            <span class="">
+              <img class="ka-icon" src="{% static "/main/icons/vinyl.png" %}">
+              <img class="ka-icon" src="{% static "/main/icons/gamepad.png" %}">
+              <img class="ka-icon" src="{% static "/main/icons/book.png" %}">
+            </span>
+          </div>
+        </a>
       </div>
       <div class="col-md-6">
-        <div class="ka-home-section shadow">
-          Blog
+        <a href="/blog">
+          <div class="ka-home-section shadow">
+            Blog
+          </div>  
+        </a>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="ka-intro ka-text">
       <h1>Welcome.</h1>
-      This simple website provides me with space to share a profile of some of my interests, a public version of my resumé, and a (work in progress) catalog of my collections including vinyl records, books and retro video games.  
-      Thanks for stopping by.
+      <p>This simple website provides me with space to share a profile of some of my interests, a public version of my resumé, and a (work in progress) catalog of my collections including vinyl records, books and retro video games.  
+      Thanks for stopping by.</p>
     </div>
   </div>
 {% endblock %}

@@ -1,10 +1,11 @@
-from django.urls import path
+from django.urls import include, path
 from . import views
 
 urlpatterns = [
         path('', views.index, name='index'),
         path('dev', views.dev, name='dev'),
+        path('collections', include('main.collections.urls')),
         path('business-finance', views.business_finance, name='business-finance'),
-        path('philosophy-philanthropy', views.philosophy_philanthropy, name='philosophy-philanthropy'),
-        path('collections', views.collections, name='collections'),
+        path('philosophy', views.philosophy, name='philosophy'),
+        path('blog', views.blog, name='blog'),
 ]
