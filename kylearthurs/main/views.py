@@ -6,6 +6,7 @@ def index(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
+
 def dev(request):
     template = loader.get_template('main/dev.html')
     context = {}

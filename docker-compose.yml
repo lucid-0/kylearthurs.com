@@ -14,15 +14,15 @@ services:
     kylearthurs:
         build: .
         image: kylearthurs
-        command: python manage.py runserver 0.0.0.0:8000 --settings=kylearthurs.settings
+        command: python /app/kylearthurs/manage.py runserver 0.0.0.0:8000 --settings=kylearthurs.settings
         volumes:
-            - .:/kylearthurs/
+            - .:/app/
         ports:
             - "8000:8000"
         depends_on:
             - database
     migrate:
         image: kylearthurs
-        command: python manage.py migrate --settings=kylearthurs.settings
+        command: python /app/kylearthurs/manage.py migrate --settings=kylearthurs.settings
         depends_on:
             - kylearthurs
